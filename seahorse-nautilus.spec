@@ -1,7 +1,7 @@
 Name:           seahorse-nautilus
 Version:        3.8.0
 %global         release_version %(echo %{version} | awk -F. '{print $1"."$2}')
-Release:        2%{?dist}
+Release:        4%{?dist}
 Summary:        PGP encryption and signing for nautilus
 License:        GPLv2+
 URL:            https://live.gnome.org/Seahorse
@@ -73,6 +73,12 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.8.0-4
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.8.0-3
+- Mass rebuild 2013-12-27
+
 * Fri Nov  1 2013 Matthias Clasen <mclasen@redhat.com> - 3.8.0-2
 - Improve the man page
 - Resolves: #948925
