@@ -1,7 +1,7 @@
 Name:           seahorse-nautilus
 Version:        3.8.0
 %global         release_version %(echo %{version} | awk -F. '{print $1"."$2}')
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        PGP encryption and signing for nautilus
 License:        GPLv2+
 URL:            https://live.gnome.org/Seahorse
@@ -9,6 +9,8 @@ Source0:        http://ftp.gnome.org/pub/gnome/sources/%{name}/%{release_version
 
 # improve man page
 Patch0: seahorse-tool-man.patch
+# rhbz#1093123
+Patch1: Add-correct-flag-for-reaping-the-progress-child.patch
 
 BuildRequires:  gtk3-devel
 BuildRequires:  desktop-file-utils
@@ -32,6 +34,7 @@ and decryption of OpenPGP files using GnuPG.
 %prep
 %setup -q
 %patch0 -p1 -b .man
+%patch1 -p1 -b .sigchld
 
 
 %build
@@ -73,6 +76,11 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 
 
 %changelog
+* Fri May  2 2014 Rui Matos <rmatos@redhat.com> - 3.8.0-5
+- Fix for "seahorse-nautilus broken by glib2 regression related to
+  SIGCHLD warnings"
+- Resolves: #1093123
+
 * Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.8.0-4
 - Mass rebuild 2014-01-24
 
