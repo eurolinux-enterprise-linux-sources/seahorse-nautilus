@@ -1,20 +1,3 @@
-seahorse-nautilus 3.11.92
- * Warn when signatures are valid but untrusted [#708640]
- * License update
- * Documentation fixes
- * Updated translations
-
-seahorse-nautilus 3.10.1
- * Updated translations
-
-seahorse-nautilus 3.10.0
- (no changes since previous release)
-
-seahorse-nautilus 3.9.90
- * Add correct flag for reaping the progress child [#697895]
- * Add support for symmetric encryption in seahorse-tool [#325803]
- * Updated translations
-
 seahorse-nautilus 3.8.0
  (no changes since previous release)
 

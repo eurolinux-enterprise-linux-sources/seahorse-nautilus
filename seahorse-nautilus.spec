@@ -1,11 +1,14 @@
 Name:           seahorse-nautilus
-Version:        3.11.92
+Version:        3.8.0
 %global         release_version %(echo %{version} | awk -F. '{print $1"."$2}')
-Release:        11%{?dist}
+Release:        2%{?dist}
 Summary:        PGP encryption and signing for nautilus
 License:        GPLv2+
 URL:            https://live.gnome.org/Seahorse
 Source0:        http://ftp.gnome.org/pub/gnome/sources/%{name}/%{release_version}/%{name}-%{version}.tar.xz
+
+# improve man page
+Patch0: seahorse-tool-man.patch
 
 BuildRequires:  gtk3-devel
 BuildRequires:  desktop-file-utils
@@ -28,15 +31,16 @@ and decryption of OpenPGP files using GnuPG.
 
 %prep
 %setup -q
+%patch0 -p1 -b .man
 
 
 %build
-%configure --disable-silent-rules --disable-gpg-check
+%configure --disable-silent-rules
 make %{?_smp_mflags}
 
 
 %install
-%make_install
+make install DESTDIR=$RPM_BUILD_ROOT
 
 desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/seahorse-pgp-encrypted.desktop
 desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/seahorse-pgp-keys.desktop
@@ -58,8 +62,7 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 
 
 %files -f %{name}.lang
-%license COPYING
-%doc AUTHORS NEWS README THANKS
+%doc AUTHORS COPYING NEWS README THANKS
 %{_bindir}/seahorse-tool
 %{_libdir}/nautilus/extensions-3.0/libnautilus-seahorse.so
 %{_datadir}/applications/*.desktop
@@ -70,21 +73,6 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 
 
 %changelog
-* Wed Jun 06 2018 Richard Hughes <rhughes@redhat.com> - 3.11.92-11
-- Update to 3.11.92
-- Resolves: #1569784
-
-* Fri May  2 2014 Rui Matos <rmatos@redhat.com> - 3.8.0-5
-- Fix for "seahorse-nautilus broken by glib2 regression related to
-  SIGCHLD warnings"
-- Resolves: #1093123
-
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.8.0-4
-- Mass rebuild 2014-01-24
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.8.0-3
-- Mass rebuild 2013-12-27
-
 * Fri Nov  1 2013 Matthias Clasen <mclasen@redhat.com> - 3.8.0-2
 - Improve the man page
 - Resolves: #948925

@@ -13,7 +13,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, write to the
+ * Free Software Foundation, Inc.,
+ * 59 Temple Place, Suite 330,
+ * Boston, MA 02111-1307, USA.
  */
 
 #include "config.h"
@@ -214,7 +217,7 @@ seahorse_tool_progress_start (const gchar *title)
     argv[2] = (gchar *)title;
     argv[3] = NULL;
 
-    ret = g_spawn_async_with_pipes (NULL, argv, NULL, G_SPAWN_STDOUT_TO_DEV_NULL | G_SPAWN_SEARCH_PATH | G_SPAWN_DO_NOT_REAP_CHILD,
+    ret = g_spawn_async_with_pipes (NULL, argv, NULL, G_SPAWN_STDOUT_TO_DEV_NULL | G_SPAWN_SEARCH_PATH,
                                     NULL, NULL, &progress_pid, &progress_fd, NULL, NULL, &err);
 
     if (!ret) {

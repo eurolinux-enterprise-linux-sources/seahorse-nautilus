@@ -16,10 +16,10 @@ msgstr ""
 "Project-Id-Version: seahorse-plugins\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=seahorse-nautilus&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-11-23 05:06+0000\n"
-"PO-Revision-Date: 2013-12-02 14:31+0100\n"
+"POT-Creation-Date: 2012-12-03 23:46+0000\n"
+"PO-Revision-Date: 2013-01-23 21:56+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
-"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +32,7 @@ msgid "File extension for packages"
 msgstr "Přípona souboru pro balíčky"
 
 #: ../data/org.gnome.seahorse.nautilus.gschema.xml.h:2
-msgid "File extension for packages when handling multiple files."
+msgid "File extension for packages when handling mulitple files."
 msgstr "Přípona souboru pro balíčky, když se pracuje s více soubory."
 
 #: ../data/org.gnome.seahorse.nautilus.gschema.xml.h:3
@@ -180,43 +180,33 @@ msgstr "Podepsáno klíčem <i><key id='%s'/> <b>Klíč odvolán</b></i> dne %s.
 msgid "Revoked Signature"
 msgstr "Odvolaný podpis"
 
-#: ../tool/seahorse-notification.c:628
-msgid "Good Signature"
-msgstr "Správný podpis"
-
-#: ../tool/seahorse-notification.c:629
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../tool/seahorse-notification.c:627
 #, c-format
 msgid "Signed by <i><key id='%s'/></i> on %s."
 msgstr "Podepsáno klíčem <i><key id='%s'/></i> dne %s."
 
-#: ../tool/seahorse-notification.c:631
-msgid "Untrusted Valid Signature"
-msgstr "Nedůvěryhodný platný podpis"
+#: ../tool/seahorse-notification.c:628
+msgid "Good Signature"
+msgstr "Správný podpis"
 
-#: ../tool/seahorse-notification.c:632
-#, c-format
-msgid "Valid but <b>untrusted</b> signature by <i><key id='%s'/></i> on %s."
-msgstr ""
-"Podepsáno platným, ale <b>nedůvěryhodným</b> klíčem <i><key id='%s'/></i> "
-"dne %s."
-
-#: ../tool/seahorse-notification.c:638
+#: ../tool/seahorse-notification.c:633
 msgid "Signing key not in keyring."
 msgstr "Podpisový klíč v klíčence chybí."
 
-#: ../tool/seahorse-notification.c:639
+#: ../tool/seahorse-notification.c:634
 msgid "Unknown Signature"
 msgstr "Neznámý podpis"
 
-#: ../tool/seahorse-notification.c:643
+#: ../tool/seahorse-notification.c:638
 msgid "Bad or forged signature. The signed data was modified."
 msgstr "Špatný nebo padělaný podpis. Podepsaná data byla změněna."
 
-#: ../tool/seahorse-notification.c:644
+#: ../tool/seahorse-notification.c:639
 msgid "Bad Signature"
 msgstr "Špatný podpis"
 
-#: ../tool/seahorse-notification.c:652
+#: ../tool/seahorse-notification.c:647
 msgid "Couldn't verify signature."
 msgstr "Nebylo možno ověřit podpis."
 
@@ -307,50 +297,50 @@ msgstr "Číst seznam URI ze standardního vstupu"
 msgid "file..."
 msgstr "soubor…"
 
-#: ../tool/seahorse-tool.c:171
-msgid "Encryption settings"
-msgstr "Nastavení šifrování"
+#: ../tool/seahorse-tool.c:169
+msgid "Choose Recipients"
+msgstr "Vyberte příjemce"
 
-#: ../tool/seahorse-tool.c:236 ../tool/seahorse-tool.c:350
+#: ../tool/seahorse-tool.c:234 ../tool/seahorse-tool.c:347
 msgid "Couldn't load keys"
 msgstr "Nebylo možno načíst klíče"
 
-#: ../tool/seahorse-tool.c:253
+#: ../tool/seahorse-tool.c:252
 #, c-format
 msgid "Choose Encrypted File Name for '%s'"
 msgstr "Zvolte název zašifrovaného souboru pro „%s“"
 
-#: ../tool/seahorse-tool.c:328
+#: ../tool/seahorse-tool.c:325
 msgid "Choose Signer"
 msgstr "Zvolte podpisový klíč"
 
-#: ../tool/seahorse-tool.c:370
+#: ../tool/seahorse-tool.c:367
 #, c-format
 msgid "Choose Signature File Name for '%s'"
 msgstr "Zvolte název souboru s podpisem pro „%s“"
 
-#: ../tool/seahorse-tool.c:410
+#: ../tool/seahorse-tool.c:407
 msgid "Import is complete"
 msgstr "Import byl dokončen"
 
-#: ../tool/seahorse-tool.c:443
+#: ../tool/seahorse-tool.c:440
 msgid "Importing keys ..."
 msgstr "Importují se klíče…"
 
-#: ../tool/seahorse-tool.c:473
+#: ../tool/seahorse-tool.c:470
 msgid "Import Failed"
 msgstr "Import selhal"
 
-#: ../tool/seahorse-tool.c:474
+#: ../tool/seahorse-tool.c:471
 msgid "Keys were found but not imported."
 msgstr "Klíče nalezeny, ale nebyly importovány."
 
-#: ../tool/seahorse-tool.c:497
+#: ../tool/seahorse-tool.c:494
 #, c-format
 msgid "Imported key"
 msgstr "Importován klíč"
 
-#: ../tool/seahorse-tool.c:499
+#: ../tool/seahorse-tool.c:496
 #, c-format
 msgid "Imported %d key"
 msgid_plural "Imported %d keys"
@@ -359,12 +349,12 @@ msgstr[1] "Importovány %d klíče"
 msgstr[2] "Importováno %d klíčů"
 
 #. File to decrypt to
-#: ../tool/seahorse-tool.c:521
+#: ../tool/seahorse-tool.c:518
 #, c-format
 msgid "Choose Decrypted File Name for '%s'"
 msgstr "Zvolte název dešifrovaného souboru pro „%s“"
 
-#: ../tool/seahorse-tool.c:578
+#: ../tool/seahorse-tool.c:575
 #, c-format
 msgid "Choose Original File for '%s'"
 msgstr "Zvolte původní soubor pro „%s“"
@@ -374,56 +364,56 @@ msgstr "Zvolte původní soubor pro „%s“"
 #. * The last thing we want to do is cascade a big pile of error
 #. * dialogs at the user.
 #.
-#: ../tool/seahorse-tool.c:651
+#: ../tool/seahorse-tool.c:648
 #, c-format
 msgid "No valid signatures found"
 msgstr "Nebyl nalezen žádný platný podpis"
 
-#: ../tool/seahorse-tool.c:698
+#: ../tool/seahorse-tool.c:695
 msgid "File Encryption Tool"
 msgstr "Nástroj pro šifrování souborů"
 
-#: ../tool/seahorse-tool.c:716
+#: ../tool/seahorse-tool.c:713
 msgid "Encrypting"
 msgstr "Šifrování"
 
-#: ../tool/seahorse-tool.c:717
+#: ../tool/seahorse-tool.c:714
 #, c-format
 msgid "Couldn't encrypt file: %s"
 msgstr "Nebylo možno zašifrovat soubor: %s"
 
-#: ../tool/seahorse-tool.c:725
+#: ../tool/seahorse-tool.c:722
 msgid "Signing"
 msgstr "Podepsání"
 
-#: ../tool/seahorse-tool.c:726
+#: ../tool/seahorse-tool.c:723
 #, c-format
 msgid "Couldn't sign file: %s"
 msgstr "Nebylo možno podepsat soubor: %s"
 
-#: ../tool/seahorse-tool.c:731
+#: ../tool/seahorse-tool.c:728
 msgid "Importing"
 msgstr "Import"
 
-#: ../tool/seahorse-tool.c:732
+#: ../tool/seahorse-tool.c:729
 #, c-format
 msgid "Couldn't import keys from file: %s"
 msgstr "Nebylo možno importovat klíče ze souboru: %s"
 
-#: ../tool/seahorse-tool.c:738
+#: ../tool/seahorse-tool.c:735
 msgid "Decrypting"
 msgstr "Dešifrování"
 
-#: ../tool/seahorse-tool.c:739
+#: ../tool/seahorse-tool.c:736
 #, c-format
 msgid "Couldn't decrypt file: %s"
 msgstr "Nebylo možno dešifrovat soubor: %s"
 
-#: ../tool/seahorse-tool.c:744
+#: ../tool/seahorse-tool.c:741
 msgid "Verifying"
 msgstr "Ověření"
 
-#: ../tool/seahorse-tool.c:745
+#: ../tool/seahorse-tool.c:742
 #, c-format
 msgid "Couldn't verify file: %s"
 msgstr "Nebylo možno ověřit soubor: %s"

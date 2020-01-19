@@ -8,5 +8,5 @@ NoDisplay=true
 X-GNOME-Bugzilla-Bugzilla=GNOME
 X-GNOME-Bugzilla-Product=seahorse
 X-GNOME-Bugzilla-Component=general
-X-GNOME-Bugzilla-Version=3.11.92
+X-GNOME-Bugzilla-Version=3.8.0
 X-GNOME-DocPath=seahorse/seahorse.xml

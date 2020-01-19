@@ -1,5 +1,5 @@
 AC_PREREQ([2.63])
-AC_INIT([seahorse-nautilus], [3.11.92],
+AC_INIT([seahorse-nautilus], [3.8.0],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=seahorse-plugins&component=Nautilus],
         [seahorse-nautilus])
 
@@ -172,7 +172,7 @@ SEAHORSE_LIBS="$SEAHORSE_LIBS $DBUS_LIBS"
 # -----------------------------------------------------------------------------
 # Libcryptui
 
-PKG_CHECK_MODULES([LIBCRYPTUI], cryptui-0.0 >= 3.9.90)
+PKG_CHECK_MODULES([LIBCRYPTUI], cryptui-0.0)
 
 SEAHORSE_CFLAGS="$SEAHORSE_CFLAGS $LIBCRYPTUI_CFLAGS"
 SEAHORSE_LIBS="$SEAHORSE_LIBS $LIBCRYPTUI_LIBS"

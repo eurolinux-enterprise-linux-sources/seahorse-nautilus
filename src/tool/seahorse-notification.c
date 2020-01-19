@@ -13,7 +13,10 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, write to the
+ * Free Software Foundation, Inc.,
+ * 59 Temple Place, Suite 330,
+ * Boston, MA 02111-1307, USA.
  */
 
 #include "config.h"
@@ -621,13 +624,8 @@ seahorse_notify_signatures (const gchar* data, gpgme_verify_result_t status)
         break;
     case GPG_ERR_NO_ERROR:
 	/* TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate. */
-        if (status->signatures->validity >= GPGME_VALIDITY_FULL) {
-            title = _("Good Signature");
-            body = _("Signed by <i><key id='%s'/></i> on %s.");
-        } else {
-            title = _("Untrusted Valid Signature");
-            body = _("Valid but <b>untrusted</b> signature by <i><key id='%s'/></i> on %s.");
-        }
+        body = _("Signed by <i><key id='%s'/></i> on %s.");
+        title = _("Good Signature");
         icon = ICON_PREFIX "seahorse-sign-ok.png";
         sig = TRUE;
         break;

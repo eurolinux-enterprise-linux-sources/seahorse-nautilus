@@ -7,31 +7,30 @@
 # This file is distributed under the same license as the Seahorse package.
 #
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 201, 2011.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: seahorse-plugins.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=seahorse-nautilus&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-11-23 05:06+0000\n"
-"PO-Revision-Date: 2013-11-25 16:49+0100\n"
+"POT-Creation-Date: 2012-12-04 12:41+0000\n"
+"PO-Revision-Date: 2012-12-31 11:12+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gtranslator 2.91.5\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/org.gnome.seahorse.nautilus.gschema.xml.h:1
 msgid "File extension for packages"
 msgstr "Extensión de los archivos para paquetes"
 
 #: ../data/org.gnome.seahorse.nautilus.gschema.xml.h:2
-#| msgid "File extension for packages when handling mulitple files."
-msgid "File extension for packages when handling multiple files."
+msgid "File extension for packages when handling mulitple files."
 msgstr "Extensión de los archivos para paquetes al manejar varios archivos."
 
 #: ../data/org.gnome.seahorse.nautilus.gschema.xml.h:3
@@ -173,42 +172,33 @@ msgstr "Firmado por <i><key id='%s'/> <b>Revocado</b></i> el %s."
 msgid "Revoked Signature"
 msgstr "Firma revocada"
 
-#: ../tool/seahorse-notification.c:628
-msgid "Good Signature"
-msgstr "Firma buena"
-
-#: ../tool/seahorse-notification.c:629
+#. TRANSLATORS: <key id='xxx'> is a custom markup tag, do not translate.
+#: ../tool/seahorse-notification.c:627
 #, c-format
 msgid "Signed by <i><key id='%s'/></i> on %s."
 msgstr "Firmado por <i><key id='%s'/></i> el %s."
 
-#: ../tool/seahorse-notification.c:631
-msgid "Untrusted Valid Signature"
-msgstr "Firma válida no confiable"
+#: ../tool/seahorse-notification.c:628
+msgid "Good Signature"
+msgstr "Firma buena"
 
-#: ../tool/seahorse-notification.c:632
-#, c-format
-msgid "Valid but <b>untrusted</b> signature by <i><key id='%s'/></i> on %s."
-msgstr ""
-"Firma de <i><key id='%s'/></i> válida pero <b>no es de confianza</b> en %s."
-
-#: ../tool/seahorse-notification.c:638
+#: ../tool/seahorse-notification.c:633
 msgid "Signing key not in keyring."
 msgstr "La clave de la firma no está en el depósito."
 
-#: ../tool/seahorse-notification.c:639
+#: ../tool/seahorse-notification.c:634
 msgid "Unknown Signature"
 msgstr "Firma desconocida"
 
-#: ../tool/seahorse-notification.c:643
+#: ../tool/seahorse-notification.c:638
 msgid "Bad or forged signature. The signed data was modified."
 msgstr "Firma mala o falsificada. Los datos de la firma se modificaron."
 
-#: ../tool/seahorse-notification.c:644
+#: ../tool/seahorse-notification.c:639
 msgid "Bad Signature"
 msgstr "Firma mala"
 
-#: ../tool/seahorse-notification.c:652
+#: ../tool/seahorse-notification.c:647
 msgid "Couldn't verify signature."
 msgstr "No se pudo verificar la firma."
 
@@ -299,50 +289,50 @@ msgstr "Leer lista de URI estándar en"
 msgid "file..."
 msgstr "archivo…"
 
-#: ../tool/seahorse-tool.c:171
-msgid "Encryption settings"
-msgstr "Configuración del cifrado"
+#: ../tool/seahorse-tool.c:169
+msgid "Choose Recipients"
+msgstr "Elija los destinatarios"
 
-#: ../tool/seahorse-tool.c:236 ../tool/seahorse-tool.c:350
+#: ../tool/seahorse-tool.c:234 ../tool/seahorse-tool.c:347
 msgid "Couldn't load keys"
 msgstr "No se pueden cargar las claves"
 
-#: ../tool/seahorse-tool.c:253
+#: ../tool/seahorse-tool.c:252
 #, c-format
 msgid "Choose Encrypted File Name for '%s'"
 msgstr "Elija un nombre de archivo cifrado para «%s»"
 
-#: ../tool/seahorse-tool.c:328
+#: ../tool/seahorse-tool.c:325
 msgid "Choose Signer"
 msgstr "Elegir clave de firma"
 
-#: ../tool/seahorse-tool.c:370
+#: ../tool/seahorse-tool.c:367
 #, c-format
 msgid "Choose Signature File Name for '%s'"
 msgstr "Elija un nombre para el archivo de firma de «%s»"
 
-#: ../tool/seahorse-tool.c:410
+#: ../tool/seahorse-tool.c:407
 msgid "Import is complete"
 msgstr "La importación está completada"
 
-#: ../tool/seahorse-tool.c:443
+#: ../tool/seahorse-tool.c:440
 msgid "Importing keys ..."
 msgstr "Importando claves…"
 
-#: ../tool/seahorse-tool.c:473
+#: ../tool/seahorse-tool.c:470
 msgid "Import Failed"
 msgstr "No se pudo importar"
 
-#: ../tool/seahorse-tool.c:474
+#: ../tool/seahorse-tool.c:471
 msgid "Keys were found but not imported."
 msgstr "Se encontraron claves, pero no se importaron."
 
-#: ../tool/seahorse-tool.c:497
+#: ../tool/seahorse-tool.c:494
 #, c-format
 msgid "Imported key"
 msgstr "Clave importada"
 
-#: ../tool/seahorse-tool.c:499
+#: ../tool/seahorse-tool.c:496
 #, c-format
 msgid "Imported %d key"
 msgid_plural "Imported %d keys"
@@ -350,12 +340,12 @@ msgstr[0] "%d clave importada"
 msgstr[1] "%d claves importadas"
 
 #. File to decrypt to
-#: ../tool/seahorse-tool.c:521
+#: ../tool/seahorse-tool.c:518
 #, c-format
 msgid "Choose Decrypted File Name for '%s'"
 msgstr "Elija el nombre de archivo descifrado para «%s»"
 
-#: ../tool/seahorse-tool.c:578
+#: ../tool/seahorse-tool.c:575
 #, c-format
 msgid "Choose Original File for '%s'"
 msgstr "Elija el archivo original para «%s»"
@@ -365,56 +355,56 @@ msgstr "Elija el archivo original para «%s»"
 #. * The last thing we want to do is cascade a big pile of error
 #. * dialogs at the user.
 #.
-#: ../tool/seahorse-tool.c:651
+#: ../tool/seahorse-tool.c:648
 #, c-format
 msgid "No valid signatures found"
 msgstr "No se encontraron firmas no válidas"
 
-#: ../tool/seahorse-tool.c:698
+#: ../tool/seahorse-tool.c:695
 msgid "File Encryption Tool"
 msgstr "Herramienta de cifrado de archivos"
 
-#: ../tool/seahorse-tool.c:716
+#: ../tool/seahorse-tool.c:713
 msgid "Encrypting"
 msgstr "Cifrando"
 
-#: ../tool/seahorse-tool.c:717
+#: ../tool/seahorse-tool.c:714
 #, c-format
 msgid "Couldn't encrypt file: %s"
 msgstr "No se pudo cifrar el archivo: «%s»"
 
-#: ../tool/seahorse-tool.c:725
+#: ../tool/seahorse-tool.c:722
 msgid "Signing"
 msgstr "Firmado"
 
-#: ../tool/seahorse-tool.c:726
+#: ../tool/seahorse-tool.c:723
 #, c-format
 msgid "Couldn't sign file: %s"
 msgstr "No se pudo firmar el archivo: «%s»"
 
-#: ../tool/seahorse-tool.c:731
+#: ../tool/seahorse-tool.c:728
 msgid "Importing"
 msgstr "Importación"
 
-#: ../tool/seahorse-tool.c:732
+#: ../tool/seahorse-tool.c:729
 #, c-format
 msgid "Couldn't import keys from file: %s"
 msgstr "No se pudieron importar claves del archivo: «%s»"
 
-#: ../tool/seahorse-tool.c:738
+#: ../tool/seahorse-tool.c:735
 msgid "Decrypting"
 msgstr "Descifrado"
 
-#: ../tool/seahorse-tool.c:739
+#: ../tool/seahorse-tool.c:736
 #, c-format
 msgid "Couldn't decrypt file: %s"
 msgstr "No se pudo descifrar el archivo: «%s»"
 
-#: ../tool/seahorse-tool.c:744
+#: ../tool/seahorse-tool.c:741
 msgid "Verifying"
 msgstr "Verificación"
 
-#: ../tool/seahorse-tool.c:745
+#: ../tool/seahorse-tool.c:742
 #, c-format
 msgid "Couldn't verify file: %s"
 msgstr "No se pudo verificar el archivo: «%s»"
@@ -585,9 +575,6 @@ msgstr ""
 #: ../tool/seahorse-util.c:508
 msgid "_Replace"
 msgstr "_Reemplazar"
-
-#~ msgid "Choose Recipients"
-#~ msgstr "Elija los destinatarios"
 
 #~ msgid "Password:"
 #~ msgstr "Contraseña:"
